@@ -1,0 +1,76 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Info</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #4f93e6, #84fab0);
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+            border: 3px solid #4f93e6;
+        }
+        .card h1 {
+            font-size: 24px;
+            color: #333333;
+            margin: 15px 0 5px;
+        }
+        .card p {
+            font-size: 16px;
+            color: #555555;
+            margin: 5px 0;
+        }
+        .card a {
+            text-decoration: none;
+            color: #4f93e6;
+        }
+        .card a.button {
+            display: inline-block;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #4f93e6;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+        .card a.button:hover {
+            background-color: #3575c7;
+        }
+        .link-section {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>John Doe</h1>
+        <p>Phone: +123456789</p>
+        <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+        <div class="link-section">
+            <p><a href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn Profile</a></p>
+        </div>
+        <a href="HossamHassan.vcf" download="JohnDoe.vcf" class="button">Save to Contacts</a>
+    </div>
+</body>
